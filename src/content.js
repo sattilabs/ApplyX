@@ -1,0 +1,16 @@
+// CONTENT: guides (blog), country notes, per-market pricing. Edit freely.
+export const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+// Per-market pricing: add e.g. 'United States':'Plans from $___ (confirm before publishing)'. Empty = "Customized Career Support Plans".
+export const marketPrice={};
+export const marketNotes={
+'United States':'Resumes are commonly concise (often one page early in a career) and exclude photos and personal details. Many employers use applicant tracking systems, so clear formatting and relevant keywords matter.',
+'United Kingdom':'Applicants usually submit a CV, commonly one to two pages, and tailor a short covering statement. Right-to-work requirements apply to most roles.',
+'Canada':'Resume conventions are close to the US. Many employers value locally relevant experience, and work-authorization requirements apply.',
+'Australia':'Resumes can run longer than in the US, often two to three pages for experienced candidates, with a focus on achievements and a clear work-rights statement.',
+'Germany':'CV formats are typically structured and chronological. Language requirements vary widely by role and employer.',
+'Netherlands':'CVs are generally concise and factual. English is used in many international roles, though this varies by employer.',
+'Other international markets':'Tell us your target country and we will discuss what is realistic given role eligibility, location and work authorization.'};
+export const guides=[
+{slug:'ats-friendly-resume-basics',title:'ATS-Friendly Resume Basics',summary:'Simple formatting and content habits that help your resume get read.',body:['Many employers use applicant tracking systems to organize applications. These systems read plain, well-structured documents most reliably, so use standard headings such as Experience, Education and Skills.','Avoid text boxes, complex tables and images that can hide your content. Use a clean font and a consistent date format.','Tailor each resume to the role. Reflect the skills and terms in the job description where they truthfully describe your experience, and lead with your most relevant achievements.']},
+{slug:'how-to-run-a-focused-job-search',title:'How to Run a Focused Job Search',summary:'Why targeted applications usually beat mass applying.',body:['Start by defining your target roles, industries and locations. A clear target makes every other step easier.','Track every application: company, role, date, version of resume used and status. A simple spreadsheet is enough, and it makes follow-ups easier.','Set a steady weekly routine for searching, applying, networking and following up, and review what is working every few weeks.']},
+{slug:'preparing-for-a-video-interview',title:'Preparing for a Video Interview',summary:'Practical preparation tips for remote interviews.',body:['Test your camera, microphone and internet connection in advance, and choose a quiet, well-lit space.','Prepare short examples from your experience that show how you handle challenges, teamwork and results. Practice saying them aloud.','Research the company and prepare a few thoughtful questions. Join a few minutes early and have your resume and notes nearby.']}];
